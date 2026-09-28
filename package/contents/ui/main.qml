@@ -170,6 +170,10 @@ PlasmoidItem {
                     MouseArea {
                         anchors.fill: parent
                         onClicked: widget.applyWallpaper(fileUrl)
+                        hoverEnabled: true
+                        onEntered: {
+                            grid.currentIndex = index
+                        }
                     }
                 }
             }
